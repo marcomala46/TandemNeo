@@ -23,7 +23,7 @@ def download():
     localfile = open(filename, 'wb')
     ftp.retrbinary("RETR " + filename, localfile.write)
 
-    with open('species_list.txt', 'r') as list:
+    with open('species_list_query.txt', 'r') as list:
         with open('assembly_summary_refseq.txt', 'r') as summary:
 
             print('############## Downloading ################')
