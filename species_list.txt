@@ -1,0 +1,5 @@
+Gallus gallus (query)
+Danio rerio (query)
+Homo sapiens (query)
+Mus musculus
+Lacerta agilis
