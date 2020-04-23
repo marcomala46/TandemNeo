@@ -285,7 +285,7 @@ def blast_all():
         if specie in sub:
             sub.remove(specie)
         for s in sub:
-            print(specie + '_tandem vs ' + s + '_main)
+            print(specie + '_tandem vs ' + s + '_main')
             cline = NcbiblastpCommandline(query=(cwd + '/query/' + specie + '_tandem.faa'), subject=(cwd + '/query/main/' + s + '_main.faa'), outfmt=7, evalue='10e-5', max_hsps=1, max_target_seqs=3, out=(cwd + '/query/tandem_vs_main/' + specie + 'tandem_' + s + '.txt'))
             cline()
 blast_all()
